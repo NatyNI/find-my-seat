@@ -17,7 +17,8 @@ jobs:
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /home/nati/find-my-seat  #  the root from the VM where you clone the repo
-          git pull
+          cd /home/nati-nicolae/find-my-seat  #  the root from the VM where you clone the repo
+          git pull origin main
+          cd frontend
           npm install
           npm run build
