@@ -1,12 +1,16 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
+import json
 
 app = Flask(__name__)
-CORS(app)  # permite accesul din frontend
+CORS(app)  
 
-@app.route("/")
-def hello():
-    return jsonify({"message": "Salut din Flask!"})
+@app.route("/search", methods=["GET"])
+def searchInputValue():
+    search_term = request.args.get('q')
+    with open("names.json") as f:
+        data = json.load(f)
+    return jsonify(data);
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)

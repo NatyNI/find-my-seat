@@ -1,14 +1,23 @@
+import { useState, useEffect } from "react";
+import Header from "./components/Header"
+import SearchInput from "./components/SearchInput";
 
 function App() {
-  //TEST TEST
-  // TEST WORKFLOW
-
+  
+  
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold text-blue-600">
-        Bine ati venit la nunta lui Andrei si Miriam
-      </h1>
-    </div>
+
+    <>
+      <header>
+        <Header/>
+      </header>
+
+      <main>
+        <SearchInput/>
+      </main>
+    </>
+
+    
   );
 }
 
