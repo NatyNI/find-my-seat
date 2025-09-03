@@ -13,7 +13,7 @@ const SearchInput = () =>{
 
     useEffect(() => {
         if (searchValue.length >= 3) {
-            axios.get(`http://127.0.0.1:8000/search?q=${searchValue}`)
+            axios.get(`/api/search?q=${searchValue}`)
                 .then(response =>{
                     setSearchResult(response.data)
                 })
