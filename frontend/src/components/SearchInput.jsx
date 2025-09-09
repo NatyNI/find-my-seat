@@ -36,6 +36,10 @@ const SearchInput = () =>{
             .toLowerCase();
     }
 
+    const clickName = () => {
+        console.log("NAMEEEE")
+    }
+
     const fuse = new Fuse(dataDB, {
         keys: ['name'],
         threshold: 0.2,
@@ -60,14 +64,22 @@ const SearchInput = () =>{
                 placeholder="Cauta..."
                 onChange= {(e) => setSearchName(e.target.value)}
                 className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
-            />
+            /> <br/>
+            
             {sugestions.map((item, index) =>
-                <div key={index}>
+                <div key={index}
+                     className="p-2 w-full flex flex-col items-center"
+                >
+                    <ul>
+                        <li onClick={clickName}>
+                            {item.name}
+                        </li>
+                    </ul>
+                    
+                   
+                  
                   <h2>
-                    {item.name}
-                  </h2> 
-                  <h2>
-                    {item.table}
+                    
                   </h2>
                 </div>
                 )}
