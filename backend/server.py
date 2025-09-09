@@ -6,7 +6,7 @@ import re
 app = Flask(__name__)
 CORS(app)  
 
-@app.route("/api/search", methods=["GET"])
+@app.route("/search", methods=["GET"])
 def searchInputValue():
     
     with open("names.json") as f:
