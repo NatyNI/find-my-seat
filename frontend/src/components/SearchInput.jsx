@@ -1,9 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react"
 import axios from "axios";
 import Fuse from 'fuse.js'
 
 
 const SearchInput = () =>{
+    const navigate = useNavigate()
 
     const [inputValue, setInputValue] = useState('')
     const [dataDB, setDataDB] = useState([])
@@ -50,7 +52,10 @@ const SearchInput = () =>{
     const receiveNameAndTable = (name, table) => {
         setInputValue(name)
         setReceiveTable(table)
-    }
+        navigate("/show-seat", {
+            state: {name, table}
+        });
+    };
    
 
     return (
