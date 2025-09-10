@@ -48,7 +48,7 @@ const SearchInput = () =>{
       });
 
     const receiveNameAndTable = (name, table) => {
-        setSelectedName(name)
+        setInputValue(name)
         setReceiveTable(table)
     }
    
