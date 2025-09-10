@@ -5,9 +5,11 @@ import Fuse from 'fuse.js'
 
 const SearchInput = () =>{
 
-    const [searchName, setSearchName] = useState('')
+    const [inputValue, setInputValue] = useState('')
     const [dataDB, setDataDB] = useState([])
-    const [sugestions, setSugestions] = useState ([])
+    const [sugestions, setSuggestions] = useState ([])
+    const [selectedName, setSelectedName] = useState('')
+    const [receiveTable, setReceiveTable] = useState('')
 
 
     useEffect(() => {
@@ -18,14 +20,16 @@ const SearchInput = () =>{
         },[]);
     
     useEffect(() => {
-        const normalizedSearch = normalizeInput(searchName);
+        const normalizedSearch = normalizeInput(inputValue);
     
         if (normalizedSearch.length >= 3) {
           const results = fuse.search(normalizedSearch);
           const filtered = results.map(result => result.item);
-          setSugestions(filtered);
+          setSuggestions(filtered);
+        } else {
+            setSuggestions([])
         }
-      }, [searchName]);    
+      }, [inputValue]);    
 
     function normalizeInput(inpNames) {
         return inpNames
@@ -36,16 +40,17 @@ const SearchInput = () =>{
             .toLowerCase();
     }
 
-    const clickName = () => {
-        console.log("NAMEEEE")
-    }
-
     const fuse = new Fuse(dataDB, {
         keys: ['name'],
         threshold: 0.2,
         ignoreLocation: true,
         useExtendedSearch: true,
       });
+
+    const receiveNameAndTable = (name, table) => {
+        setSelectedName(name)
+        setReceiveTable(table)
+    }
    
 
     return (
@@ -57,12 +62,16 @@ const SearchInput = () =>{
                 Introdu numele tau
             </h3>
             <h1>
-                {searchName}
+                {inputValue}
+            </h1>
+            <h1>
+                {receiveTable}
             </h1>
             <input 
                 type="text"
                 placeholder="Cauta..."
-                onChange= {(e) => setSearchName(e.target.value)}
+                value = {inputValue}
+                onChange= {(e) => setInputValue(e.target.value)}
                 className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
             /> <br/>
             
@@ -71,7 +80,7 @@ const SearchInput = () =>{
                      className="p-2 w-full flex flex-col items-center"
                 >
                     <ul>
-                        <li onClick={clickName}>
+                        <li onClick= {() => receiveNameAndTable(item.name, item.table) }>
                             {item.name}
                         </li>
                     </ul>
