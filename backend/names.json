@@ -86,6 +86,6 @@
     { "name": "Nicolae Emima", "table": 2 },
     { "name": "Nicolae Miriam", "table": 3 },
     { "name": "Vacaru Mihaela", "table": 4 },
-    { "name": "Nicolae Natanael", "table": 5 }
+    { "name": "Nicolae Natanael", "table": 5, "kids": "Copiii dumneavostra stau la masa 4" }
   ]
   

@@ -49,11 +49,11 @@ const SearchInput = () =>{
         useExtendedSearch: true,
       });
 
-    const receiveNameAndTable = (name, table) => {
+    const receiveNameAndTable = (name, table, kids) => {
         setInputValue(name)
         setReceiveTable(table)
         navigate("/show-seat", {
-            state: {name, table}
+            state: {name, table, kids}
         });
     };
    
@@ -85,7 +85,7 @@ const SearchInput = () =>{
                      className="p-2 w-full flex flex-col items-center"
                 >
                     <ul>
-                        <li onClick= {() => receiveNameAndTable(item.name, item.table) }>
+                        <li onClick= {() => receiveNameAndTable(item.name, item.table, item.kids) }>
                             {item.name}
                         </li>
                     </ul>
