@@ -15,7 +15,7 @@ const SearchInput = () =>{
 
 
     useEffect(() => {
-            axios.get(`/api/search`)
+            axios.get(`http://127.0.0.0.:8000/search`)
                 .then(response =>{
                     setDataDB(response.data)
                 })

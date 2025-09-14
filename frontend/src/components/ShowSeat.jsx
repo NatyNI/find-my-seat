@@ -19,8 +19,11 @@ const ShowSeat = () =>{
             <h2>
                 {kids}
             </h2> <br/>
+            <img
+                src={`/images/${table}.png`}
+            />
             <button onClick={() =>navigate("/")}>
-                INAPOI
+                INAPOI LA CAUTARE
             </button>
         </div>
 

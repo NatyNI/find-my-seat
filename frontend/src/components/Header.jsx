@@ -2,8 +2,14 @@
 const Header = () =>{
 
     return(
-        <div className=" bg-blue-500 text-white text-center p-4">
-            <h2>Bine ati venit la nunta lui <br></br> Andrei & Miriam</h2>
+        <div className=" bg-amber-700 text-white text-center pt-4">
+            <h1 className=" text-lg ">
+                Bine ati venit la nunta lui 
+            </h1>
+
+            <h1 className="font-bold text-xl p-3"> 
+                Andrei & Miriam
+            </h1>
         </div>
     )
 }
