@@ -9,7 +9,6 @@ const ShowSeat = () =>{
     return(
 
         <div className="flex flex-col items-center p-6">
-            <h1>SHOW SEAT</h1>
             <h1>
                 {name}
             </h1> <br/>
@@ -21,7 +20,7 @@ const ShowSeat = () =>{
             </h2> <br/>
             <img
                 src={`/images/${table}.png`}
-            />
+            /> <br/>
             <button onClick={() =>navigate("/")}>
                 INAPOI LA CAUTARE
             </button>

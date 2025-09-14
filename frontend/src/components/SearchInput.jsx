@@ -10,7 +10,6 @@ const SearchInput = () =>{
     const [inputValue, setInputValue] = useState('')
     const [dataDB, setDataDB] = useState([])
     const [sugestions, setSuggestions] = useState ([])
-    const [selectedName, setSelectedName] = useState('')
     const [receiveTable, setReceiveTable] = useState('')
 
 
@@ -66,12 +65,7 @@ const SearchInput = () =>{
                 className="p-5">
                 Introdu numele tau
             </h3>
-            <h1>
-                {inputValue}
-            </h1>
-            <h1>
-                {receiveTable}
-            </h1>
+
             <input 
                 type="text"
                 placeholder="Cauta..."
