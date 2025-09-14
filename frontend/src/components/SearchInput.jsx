@@ -71,7 +71,6 @@ const SearchInput = () =>{
                 placeholder="Cauta..."
                 value = {inputValue}
                 onChange= {(e) => setInputValue(e.target.value)}
-                onKeyDown={(e) => setInputValue(e.target.values)}
                 className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
             /> <br/>
             
