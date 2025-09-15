@@ -1,25 +1,28 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import axios from "axios";
-import Fuse from 'fuse.js'
+import Fuse from 'fuse.js';
 
 
 const SearchInput = () =>{
-    const navigate = useNavigate()
+    const navigate = useNavigate();
 
-    const [inputValue, setInputValue] = useState('')
-    const [dataDB, setDataDB] = useState([])
-    const [sugestions, setSuggestions] = useState ([])
-    const [receiveTable, setReceiveTable] = useState('')
+    const [inputValue, setInputValue] = useState('');
+    const [dataDB, setDataDB] = useState([]);
+    const [sugestions, setSuggestions] = useState ([]);
+    const [receiveTable, setReceiveTable] = useState('');
+    const [warningIncorectInput, setWarningIncorectInput] = useState('');
+    
 
-
+    //Request to API
     useEffect(() => {
-            axios.get(`/api/search`)
+            axios.get(`http://127.0.0.0:8000/search`)
                 .then(response =>{
-                    setDataDB(response.data)
-                })
+                    setDataDB(response.data);
+                });
         },[]);
     
+    //Make sugestions for the input, at least 3 letters in input
     useEffect(() => {
         const normalizedSearch = normalizeInput(inputValue);
     
@@ -28,10 +31,11 @@ const SearchInput = () =>{
           const filtered = results.map(result => result.item);
           setSuggestions(filtered);
         } else {
-            setSuggestions([])
+            setSuggestions([]);
         }
       }, [inputValue]);    
 
+    //Remove diacritics, spaces, capital letters from input
     function normalizeInput(inpNames) {
         return inpNames
             .normalize('NFD')
@@ -39,8 +43,9 @@ const SearchInput = () =>{
             .trim()
             .replace(/\s+/g, ' ')
             .toLowerCase();
-    }
-
+    };
+    
+    //Search in DB the name from input that have the most matching
     const fuse = new Fuse(dataDB, {
         keys: ['name'],
         threshold: 0.2,
@@ -48,13 +53,60 @@ const SearchInput = () =>{
         useExtendedSearch: true,
       });
 
-    const receiveNameAndTable = (name, table, kids) => {
-        setInputValue(name)
-        setReceiveTable(table)
+    //Handle input when users click on the sugestion
+    const onClickReceiveNameAndTable = (name, table, kids) => {
+        setInputValue(name);
+        setReceiveTable(table);
         navigate("/show-seat", {
             state: {name, table, kids}
         });
     };
+
+    //Handle input when users click on they keyboard "Ok" or "Enter"
+    const onKeyDownReceiveNameAndTable = (e) => {
+
+        if (e.key === "Enter" ) {
+            const inputValueOnKey = e.target.value.trim();
+
+            const words = inputValueOnKey.split(/\s+/);
+            const normalizedSearch = normalizeInput(inputValueOnKey);
+            const results = fuse.search(normalizedSearch);
+            const filtered = results.map(result =>result.item);
+    
+            if (words.length !== 2) {
+                setWarningIncorectInput("Introdu Nume Prenume");
+                return;
+            };
+
+            if (filtered.length === 0){
+                setWarningIncorectInput("Introdu Nume Prenume valid");
+                return;
+            };
+
+            const checkLenWord = (inputFromUser) =>{
+                const splitWords = inputFromUser.split(/\s+/)
+                const checkLenWords =(splitWords.map((name) => {
+                    if (name.length < 4){
+                        setWarningIncorectInput("Introdu Nume Prenume complet")
+                        return;
+                    };
+                }));
+            };
+
+            const finalResult = (filtered.map((item) =>{
+                checkLenWord(inputValueOnKey);
+                const name = normalizeInput(item.name);
+                const table = item.table;
+                const kids = item.kids;
+                
+                if (normalizedSearch === name){
+                    navigate("/show-seat", {
+                        state: {name, table, kids}
+                    });   
+                } else (setWarningIncorectInput("Introdu Nume Prenume complet"));     
+            })); 
+
+    }};
    
 
     return (
@@ -62,16 +114,22 @@ const SearchInput = () =>{
         <div className="flex flex-col items-center" >
         
             <h3 
-                className="p-5">
+                className="p-5 text-lg">
                 Introdu numele tau
             </h3>
+            <h3>
+                Incepe cu numele de familie
+            </h3>
 
+            <h3 className="text-red-500 p-2">
+                {warningIncorectInput}
+            </h3>
             <input 
                 type="text"
                 placeholder="Cauta..."
                 value = {inputValue}
                 onChange= {(e) => setInputValue(e.target.value)}
-                onKeyDown={(e) => setInputValue(e.target.value)}
+                onKeyDown={(e) => onKeyDownReceiveNameAndTable(e)}
                 className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
             /> <br/>
             
@@ -80,13 +138,11 @@ const SearchInput = () =>{
                      className="p-2 w-full flex flex-col items-center"
                 >
                     <ul>
-                        <li onClick= {() => receiveNameAndTable(item.name, item.table, item.kids) }>
+                        <li onClick= {() => onClickReceiveNameAndTable(item.name, item.table, item.kids) }>
                             {item.name}
                         </li>
                     </ul>
                     
-                   
-                  
                   <h2>
                     
                   </h2>
