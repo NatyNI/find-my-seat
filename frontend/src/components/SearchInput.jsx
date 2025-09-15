@@ -72,17 +72,20 @@ const SearchInput = () =>{
             const normalizedSearch = normalizeInput(inputValueOnKey);
             const results = fuse.search(normalizedSearch);
             const filtered = results.map(result =>result.item);
-    
+            
+            //Check if input have 2 name
             if (words.length !== 2) {
                 setWarningIncorectInput("Introdu Nume Prenume");
                 return;
             };
 
+            //Check if a name was filtered
             if (filtered.length === 0){
                 setWarningIncorectInput("Introdu Nume Prenume valid");
                 return;
             };
 
+            //Check in name and surname have at least 4 letters in input
             const checkLenWord = (inputFromUser) =>{
                 const splitWords = inputFromUser.split(/\s+/)
                 const checkLenWords =(splitWords.map((name) => {
@@ -93,6 +96,7 @@ const SearchInput = () =>{
                 }));
             };
 
+            //We move on the next page if all checks are TRUE
             const finalResult = (filtered.map((item) =>{
                 checkLenWord(inputValueOnKey);
                 const name = normalizeInput(item.name);
