@@ -16,7 +16,7 @@ const SearchInput = () =>{
 
     //Request to API
     useEffect(() => {
-            axios.get(`/api/search`)
+            axios.get(`http://127.0.0.0:8000/search`)
                 .then(response =>{
                     setDataDB(response.data);
                 });
@@ -90,7 +90,7 @@ const SearchInput = () =>{
                 const splitWords = inputFromUser.split(/\s+/)
                 const checkLenWords =(splitWords.map((name) => {
                     if (name.length < 4){
-                        setWarningIncorectInput("Introdu Nume Prenume complet")
+                        setWarningIncorectInput("Introdu Nume Prenume")
                         return;
                     };
                 }));
@@ -99,15 +99,12 @@ const SearchInput = () =>{
             //We move on the next page if all checks are TRUE
             const finalResult = (filtered.map((item) =>{
                 checkLenWord(inputValueOnKey);
-                const name = normalizeInput(item.name);
-                const table = item.table;
-                const kids = item.kids;
-                
+                const name = normalizeInput(item.name)
                 if (normalizedSearch === name){
                     navigate("/show-seat", {
-                        state: {name, table, kids}
+                        state: {name: item.name, table: item.table, kids: item.kids}
                     });   
-                } else (setWarningIncorectInput("Introdu Nume Prenume complet"));     
+                } else (setWarningIncorectInput("Introdu Nume Prenume"));     
             })); 
 
     }};
@@ -115,17 +112,17 @@ const SearchInput = () =>{
 
     return (
 
-        <div className="flex flex-col items-center" >
+        <div className=" mt-24 flex flex-col items-center top-0" >
         
             <h3 
-                className="p-5 text-lg">
+                className="mt-4 text-lg">
                 Introdu numele tau
             </h3>
             <h3>
                 Incepe cu numele de familie
             </h3>
 
-            <h3 className="text-red-500 p-2">
+            <h3 className="text-red-500 p-2 text-sm">
                 {warningIncorectInput}
             </h3>
             <input 

@@ -2,7 +2,7 @@
 const Header = () =>{
 
     return(
-        <div className=" bg-amber-700 text-white text-center pt-4">
+        <div className=" bg-amber-700 fixed w-full text-white text-center pt-4">
             <h1 className=" text-lg ">
                 Bine ati venit la nunta lui 
             </h1>
