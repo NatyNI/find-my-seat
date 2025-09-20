@@ -9,11 +9,14 @@ const ShowSeat = () =>{
     return(
 
         <div className="flex flex-col items-center p-6">
-            <h1>
+            <h1 className="border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold">
                 {name}
             </h1> <br/>
             <h2>
-                Locul tau este la masa {table}
+                Locul dumneavoastră este la
+            </h2>
+            <h2 className="text font-bold text-lg bg-gray-300 border rounded">
+                masa {table} 🍽️
             </h2> <br/>
             <h2>
                 {kids}
