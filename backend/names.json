@@ -87,7 +87,8 @@
   { "name": "Niculae Miriam", "table": 3 },
   { "name": "Vacaru Mihaela", "table": 4 },
   { "name": "Nicolae Natanael", "table": 5, "kids": "Copiii dumneavoastră stau la masa 4" },
-  { "name": "Beni & Damaris Boariu", "table": 7, "kids": "Copiii dumneavoastră stau la masa 9" }
+  { "name": "Beni & Damaris Boariu", "table": 7, "kids": "Copiii dumneavoastră stau la masa 9" },
+  { "name": "Sima Sami", "table": "5"}
 ]
 
   

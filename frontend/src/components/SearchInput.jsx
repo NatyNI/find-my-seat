@@ -115,11 +115,11 @@ const SearchInput = () =>{
         <div className=" mt-24 flex flex-col items-center top-0" >
         
             <h3 
-                className="mt-4 text-lg">
-                Introdu numele tau
+                className="mt-6 text-xl font-bold">
+                Introdu numele tău
             </h3>
-            <h3>
-                Incepe cu numele de familie
+            <h3 className="text-sm">
+                Începe cu numele de familie
             </h3>
 
             <h3 className="text-red-500 p-2 text-sm">
@@ -127,29 +127,26 @@ const SearchInput = () =>{
             </h3>
             <input 
                 type="text"
-                placeholder="Cauta..."
+                placeholder="Caută..."
                 value = {inputValue}
                 onChange= {(e) => setInputValue(e.target.value)}
                 onKeyDown={(e) => onKeyDownReceiveNameAndTable(e)}
-                className="px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all duration-300"
-            /> <br/>
+                className="px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-500 transition-all duration-300"
+            />
+    
+                {sugestions.map((item, index) =>
+                    <div key={index}
+                         className="w-full p-2 max-w-[230px] px-4 border-l border-r border-green-500/40 rounded-md hover:bg-green-500/40 text-center"
+                    >
+                        <ul>
+                            <li onClick= {() => onClickReceiveNameAndTable(item.name, item.table, item.kids) }>
+                                {item.name}
+                            </li>
+                        </ul>
+                    
+                    </div>
+                    )}
             
-            {sugestions.map((item, index) =>
-                <div key={index}
-                     className="p-2 w-full flex flex-col items-center"
-                >
-                    <ul>
-                        <li onClick= {() => onClickReceiveNameAndTable(item.name, item.table, item.kids) }>
-                            {item.name}
-                        </li>
-                    </ul>
-                    
-                  <h2>
-                    
-                  </h2>
-                </div>
-                )}
-           
         </div>
         
     );
