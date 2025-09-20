@@ -134,19 +134,22 @@ const SearchInput = () =>{
                 className="px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-500 transition-all duration-300"
             />
     
-                {sugestions.map((item, index) =>
-                    <div key={index}
-                         className="w-full p-2 max-w-[230px] px-4 border-l border-r border-green-500/40 rounded-md hover:bg-green-500/40 text-center"
-                    >
-                        <ul>
-                            <li onClick= {() => onClickReceiveNameAndTable(item.name, item.table, item.kids) }>
-                                {item.name}
-                            </li>
-                        </ul>
-                    
-                    </div>
-                    )}
-            
+            {sugestions.map((item, index) =>
+                <div key={index}
+                     className="w-full p-2 max-w-[230px] px-4 border-l border-r border-green-500/40 rounded-md hover:bg-green-500/40 text-center"
+                >
+                    <ul>
+                        <li onClick= {() => onClickReceiveNameAndTable(item.name, item.table, item.kids) }>
+                            {item.name}
+                        </li>
+                    </ul>
+                
+                </div>
+                )}
+                <div class="fixed inset-0 -z-10 opacity-30">
+                    <img src="/images/A&M.png" alt="A&M Logo" class="w-full h-full object-cover translate-y-10" />
+                </div>
+
         </div>
         
     );
