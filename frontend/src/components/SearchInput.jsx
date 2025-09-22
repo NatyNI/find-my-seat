@@ -16,7 +16,7 @@ const SearchInput = () =>{
 
     //Request to API
     useEffect(() => {
-            axios.get(`/api/search`)
+            axios.get(`http://127.0.0.0:8000/search`)
                 .then(response =>{
                     setDataDB(response.data);
                 });
@@ -136,7 +136,7 @@ const SearchInput = () =>{
     
             {sugestions.map((item, index) =>
                 <div key={index}
-                     className="w-full p-2 max-w-[230px] px-4 border-l border-r border-green-500/40 rounded-md hover:bg-green-500/40 text-center"
+                     className="w-full p-2 max-w-[230px] px-4 border-l border-r border-green-500/40 rounded-md hover:bg-green-500/40 text-center font-bold"
                 >
                     <ul>
                         <li onClick= {() => onClickReceiveNameAndTable(item.name, item.table, item.kids) }>
@@ -146,9 +146,9 @@ const SearchInput = () =>{
                 
                 </div>
                 )}
-                <div class="fixed inset-0 -z-10 opacity-30">
+                {/*<div class="fixed inset-0 -z-10 opacity-30">
                     <img src="/images/A&M.png" alt="A&M Logo" class="w-full h-full object-cover translate-y-10" />
-                </div>
+                </div>*/}
 
         </div>
         

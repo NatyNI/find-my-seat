@@ -9,13 +9,13 @@ const ShowSeat = () =>{
     return(
 
         <div className="flex flex-col items-center p-6">
-            <h1 className="border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold">
+            <h1 className="mt-3 border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold">
                 {name}
             </h1> <br/>
-            <h2>
+            <h2 className="text-lg">
                 Locul dumneavoastră este la
             </h2>
-            <h2 className="text font-bold text-lg bg-gray-300 border rounded">
+            <h2 className="text p-1 font-bold text-lg bg-gray-300 border rounded">
                 masa {table} 🍽️
             </h2> <br/>
             <h2>
@@ -24,9 +24,20 @@ const ShowSeat = () =>{
             <img
                 src={`/images/${table}.png`}
             /> <br/>
-            <button onClick={() =>navigate("/")}>
-                INAPOI LA CAUTARE
-            </button>
+            <button
+                onClick={() =>navigate("/")}
+                className="focus:outline-none focus:ring-1 focus:ring-green-500 hover:bg-black-800 rounded-lg p-1 text-white font-bold bg-gray-500 "
+            >
+                ÎNAPOI LA CĂUTARE
+            </button> <br/>
+            <div className="flex flex-col items-center absolute bottom-[10px]">
+                <h2 className="text-sm">
+                    Mulțumim pentru prezența dumneavoastră!
+                </h2>
+                <h2>
+                    Cu drag, Andrei & Miriam!
+                </h2>
+            </div>
         </div>
 
     )
