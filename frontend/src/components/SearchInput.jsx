@@ -16,7 +16,7 @@ const SearchInput = () =>{
 
     //Request to API
     useEffect(() => {
-            axios.get(`/api/search`)
+            axios.get(`http://127.0.0.0:8000/search`)
                 .then(response =>{
                     setDataDB(response.data);
                 });
@@ -131,12 +131,12 @@ const SearchInput = () =>{
                 value = {inputValue}
                 onChange= {(e) => setInputValue(e.target.value)}
                 onKeyDown={(e) => onKeyDownReceiveNameAndTable(e)}
-                className="px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-1 focus:ring-green-500 transition-all duration-300"
+                className="px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
             />
     
             {sugestions.map((item, index) =>
                 <div key={index}
-                     className="w-full p-2 max-w-[230px] px-4 border-l border-r border-green-500/40 rounded-md hover:bg-green-500/40 text-center font-bold"
+                     className="w-full p-2 max-w-[220px] border-l-2 border-r-2 border-green-500/60 rounded-md hover:bg-green-500/40 text-center font-bold"
                 >
                     <ul>
                         <li onClick= {() => onClickReceiveNameAndTable(item.name, item.table, item.kids) }>

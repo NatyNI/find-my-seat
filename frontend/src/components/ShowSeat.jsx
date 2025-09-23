@@ -16,7 +16,7 @@ const ShowSeat = () =>{
                 Locul dumneavoastră este la
             </h2>
             <h2 className="text p-1 font-bold text-lg bg-gray-300 border rounded">
-                masa {table} 🍽️
+                🍽️ masa {table} 
             </h2> <br/>
             <h2>
                 {kids}
