@@ -16,7 +16,7 @@ const SearchInput = () =>{
 
     //Request to API
     useEffect(() => {
-            axios.get(`/api/search`)
+            axios.get(`http://127.0.0.0:8000/search`)
                 .then(response =>{
                     setDataDB(response.data);
                 });
@@ -147,7 +147,7 @@ const SearchInput = () =>{
                 </div>
                 )}
                 <div class="fixed inset-0 -z-10 opacity-30">
-                    <img src="/images/bum2.png" alt="A&M Logo" class="w-full h-full object-cover translate-y-10" />
+                    <img src="/images/bum3.png" alt="A&M Logo" class="w-full h-full object-cover translate-y-10" />
                 </div>
 
         </div>
