@@ -134,18 +134,20 @@ const SearchInput = () =>{
                 className="px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
             />
     
-            {sugestions.map((item, index) =>
+            <div className="max-h-[320px] w-full max-w-[200px] overflow-y-auto pr-1 ">
+              {sugestions.map((item, index) =>
                 <div key={index}
-                     className="w-full p-2 max-w-[220px] border-l-2 border-r-2 border-green-500/60 rounded-md hover:bg-green-500/40 text-center font-bold"
+                     className="w-full p-2 border-l-2 border-r-2 border-green-500/60 rounded-md hover:bg-green-500/40 text-center font-bold"
                 >
-                    <ul>
-                        <li onClick= {() => onClickReceiveNameAndTable(item.name, item.table, item.kids) }>
-                            {item.name}
-                        </li>
-                    </ul>
-                
+                  <ul>
+                    <li onClick={() => onClickReceiveNameAndTable(item.name, item.table, item.kids)}>
+                      {item.name}
+                    </li>
+                  </ul>
                 </div>
-                )}
+              )}
+            </div>
+
                 <div class="fixed inset-0 -z-10 opacity-20">
                     <img src="/images/bum3.png" alt="A&M Logo" class="w-full h-full object-cover translate-y-10" />
                 </div>
