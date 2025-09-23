@@ -134,10 +134,10 @@ const SearchInput = () =>{
                 className="px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
             />
     
-            <div className="max-h-[320px] w-full max-w-[200px] overflow-y-auto pr-1 ">
+            <div className="max-h-[288px] w-full max-w-[200px] overflow-y-auto pr-1 ">
               {sugestions.map((item, index) =>
                 <div key={index}
-                     className="w-full p-2 border-l-2 border-r-2 border-green-500/60 rounded-md hover:bg-green-500/40 text-center font-bold"
+                     className="w-full p-1 border-l-2 border-r-2 border-green-500/60 rounded-md hover:bg-green-500/40 text-center font-bold"
                 >
                   <ul>
                     <li onClick={() => onClickReceiveNameAndTable(item.name, item.table, item.kids)}>
