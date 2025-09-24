@@ -31,10 +31,10 @@ const ShowSeat = () =>{
                 ÎNAPOI LA CĂUTARE
             </button> <br/>
             <div className="flex flex-col items-center absolute bottom-[10px]">
-                <h2 className="text-sm">
+                <h2 className="text-sm inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(170,170,170,0.8)_0%,_rgba(170,170,170,0)_120%)]">
                     Mulțumim pentru prezența dumneavoastră!
                 </h2>
-                <h2>
+                <h2 className="inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(170,170,170,0.8)_0%,_rgba(170,170,170,0)_120%)]">
                     Cu drag, Andrei & Miriam!
                 </h2>
             </div>
