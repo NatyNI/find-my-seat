@@ -18,7 +18,7 @@ def sendNames():
 def sendImage():
     nrTable = request.args.get('nrTable')
     print(nrTable)
-    imageUrl = f'http://127.0.0.0:8000/static/images/{nrTable}.png'
+    imageUrl = f'/api/images/static/images/{nrTable}.png'
     return jsonify({
         'imageUrl': imageUrl
     })

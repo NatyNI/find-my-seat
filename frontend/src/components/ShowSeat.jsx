@@ -10,7 +10,7 @@ const ShowSeat = () =>{
     const {name, table, kids} = location.state || {};
 
     useEffect(() =>{
-        axios.get(`/images`, {
+        axios.get(`/api/images`, {
             params: {
                 nrTable:`${table}`
             }
