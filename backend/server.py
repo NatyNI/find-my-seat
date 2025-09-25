@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 from flask_cors import CORS
 import json
 import re
+import logging
 
 app = Flask(__name__)
 CORS(app)  
@@ -19,6 +20,7 @@ def sendImage():
     nrTable = request.args.get('nrTable')
     print(nrTable)
     imageUrl = f'/api/images/static/images/{nrTable}.png'
+    logging.info("✅ Am intrat în funcția sendImage")
     return jsonify({
         'imageUrl': imageUrl
     })
