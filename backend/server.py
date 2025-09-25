@@ -20,10 +20,10 @@ def sendImage():
     nrTable = request.args.get('nrTable')
     print(nrTable)
     imageUrl = f'/static/images/{nrTable}.png'
-    logging.info("✅ Am intrat în funcția sendImage")
+
     return jsonify({
         'imageUrl': imageUrl,
-        'message': '✅ Funcția sendImage a fost apelată'
+        'message': ' Funcția sendImage a fost apelată'
     })
 
 if __name__ == "__main__":
