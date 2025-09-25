@@ -7,7 +7,7 @@ import logging
 app = Flask(__name__)
 CORS(app)  
 
-@app.route("/api/search", methods=["GET"])
+@app.route("/search", methods=["GET"])
 def sendNames():
     
     with open("names.json") as f:
@@ -15,11 +15,11 @@ def sendNames():
     
     return jsonify(data)
 
-@app.route("/api/images", methods=["GET"])
+@app.route("/images", methods=["GET"])
 def sendImage():
     nrTable = request.args.get('nrTable')
     print(nrTable)
-    imageUrl = f'/static/images/{nrTable}.png'
+    imageUrl = f'https://findmyseat.website/static/images/{nrTable}.png'
     logging.info("✅ Am intrat în funcția sendImage")
     return jsonify({
         'imageUrl': imageUrl,
