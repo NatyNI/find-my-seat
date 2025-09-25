@@ -15,11 +15,11 @@ def sendNames():
     
     return jsonify(data)
 
-@app.route("/api/images", methods=["GET"])
+@app.route("/images", methods=["GET"])
 def sendImage():
     nrTable = request.args.get('nrTable')
     print(nrTable)
-    imageUrl = f'/api/images/static/images/{nrTable}.png'
+    imageUrl = f'/static/images/{nrTable}.png'
     logging.info("✅ Am intrat în funcția sendImage")
     return jsonify({
         'imageUrl': imageUrl,
