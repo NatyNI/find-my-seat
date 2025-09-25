@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const ShowSeat = () =>{
-    const [imageUrl, setImageUrl] = useState(null)
+    const [imageUrl, setImageUrl] = useState('')
     const location = useLocation()
     const navigate = useNavigate()
     const {name, table, kids} = location.state || {};
