@@ -16,6 +16,7 @@ const ShowSeat = () =>{
             }
         })
             .then(response => {
+                console.log(response.data.message)
                 setImageUrl(response.data.imageUrl)
             })
     }, []);

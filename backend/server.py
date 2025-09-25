@@ -22,7 +22,8 @@ def sendImage():
     imageUrl = f'/api/images/static/images/{nrTable}.png'
     logging.info("✅ Am intrat în funcția sendImage")
     return jsonify({
-        'imageUrl': imageUrl
+        'imageUrl': imageUrl,
+        'message': '✅ Funcția sendImage a fost apelată'
     })
 
 if __name__ == "__main__":
