@@ -37,7 +37,7 @@ const ShowSeat = () =>{
                 {kids}
             </h2> <br/>
             <img
-                src={imageUrl}
+                src={`https://findmyseat.website${imageUrl}`} alt="Masa"
             /> <br/>
             <button
                 onClick={() =>navigate("/")}
