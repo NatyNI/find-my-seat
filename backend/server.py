@@ -19,7 +19,7 @@ def sendNames():
 def sendImage():
     nrTable = request.args.get('nrTable')
     print(nrTable)
-    imageUrl = f'https://findmyseat.website/static/images/{nrTable}.png'
+    imageUrl = f'/static/images/{nrTable}.png'
     logging.info("✅ Am intrat în funcția sendImage")
     return jsonify({
         'imageUrl': imageUrl,
