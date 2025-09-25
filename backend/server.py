@@ -15,7 +15,7 @@ def sendNames():
     
     return jsonify(data)
 
-@app.route("/images", methods=["GET"])
+@app.route("/api/images", methods=["GET"])
 def sendImage():
     nrTable = request.args.get('nrTable')
     print(nrTable)
