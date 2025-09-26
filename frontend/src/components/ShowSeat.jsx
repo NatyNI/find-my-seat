@@ -8,6 +8,8 @@ const ShowSeat = () =>{
     const location = useLocation()
     const navigate = useNavigate()
     const {name, table, kids} = location.state || {};
+    console.log('location.state:', location.state);
+
 
     useEffect(() =>{
         if (!table) {
