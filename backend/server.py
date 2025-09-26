@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 CORS(app)  
 
-@app.route("/search", methods=["GET"])
+@app.route("/api/search", methods=["GET"])
 def sendNames():
     
     with open("names.json") as f:
@@ -14,7 +14,7 @@ def sendNames():
     
     return jsonify(data)
 
-@app.route("/images", methods=["GET"])
+@app.route("/api/images", methods=["GET"])
 def sendImage():
     nrTable = request.args.get('nrTable')
     app.logger.info(f"Primit nrTable = {nrTable}")
