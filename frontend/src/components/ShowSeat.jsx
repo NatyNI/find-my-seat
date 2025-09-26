@@ -4,13 +4,13 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 const ShowSeat = () =>{
-    const [imageUrl, setImageUrl] = useState('')
+    const [imageUrl, setImageUrl] = useState(null)
     const location = useLocation()
     const navigate = useNavigate()
     const {name, table, kids} = location.state || {};
 
     useEffect(() =>{
-        axios.get(`api/images`, {
+        axios.get(`/api/images`, {
             params: {
                 nrTable:`${table}`
             }
@@ -37,7 +37,7 @@ const ShowSeat = () =>{
                 {kids}
             </h2> <br/>
             <img
-                src={`https://findmyseat.website/static/images/${imageUrl}.png`} alt="Masa"
+                src={imageUrl} alt="Masa"
             /> <br/>
             <button
                 onClick={() =>navigate("/")}
