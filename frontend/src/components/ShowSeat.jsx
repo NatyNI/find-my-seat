@@ -10,6 +10,11 @@ const ShowSeat = () =>{
     const {name, table, kids} = location.state || {};
 
     useEffect(() =>{
+        if (!table) {
+            console.warn('Value of table is not available');
+            return;
+          }
+
         axios.get(`/api/images`, {
             params: {
                 nrTable:`${table}`
