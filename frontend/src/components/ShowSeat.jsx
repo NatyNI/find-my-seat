@@ -11,18 +11,31 @@ const ShowSeat = () =>{
     console.log('location.state:', location.state);
 
 
-    useEffect(() =>{
-        
-        axios.get(`/api/images`, {
+    useEffect(() => {
+        console.log("Valoare table:", table);
+    
+        if (!table) {
+            console.warn('⚠️ Table nu e definit, nu facem request.');
+            return;
+        }
+    
+        axios.get('/api/images', {
             params: {
-                nrTable:`${table}`
+                nrTable: `${table}`
             }
         })
-            .then(response => {
-                console.log(response.data.message)
-                setImageUrl(response.data.imageUrl)
-            })
+        .then(response => {
+            console.log("✅ Răspuns API /api/images:", response.data.message);
+            setImageUrl(response.data.imageUrl);
+        })
+        .catch(error => {
+            console.error("❌ Eroare la /api/images:", error.response?.status, error.message);
+            if (error.response?.data) {
+                console.error("Detalii eroare:", error.response.data);
+            }
+        });
     }, [table]);
+    
     console.log(imageUrl)
     return(
 

@@ -17,6 +17,7 @@ def sendNames():
 @app.route("/images", methods=["GET"])
 def sendImage():
     nrTable = request.args.get('nrTable')
+    app.logger.info(f"Primit nrTable = {nrTable}")
     print(nrTable)
     imageUrl = f'/static/images/{nrTable}.png'
     print(imageUrl)
