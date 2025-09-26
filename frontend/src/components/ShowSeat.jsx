@@ -19,7 +19,7 @@ const ShowSeat = () =>{
                 console.log(response.data.message)
                 setImageUrl(response.data.imageUrl)
             })
-    }, []);
+    }, [table]);
     console.log(imageUrl)
     return(
 
