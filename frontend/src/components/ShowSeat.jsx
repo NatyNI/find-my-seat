@@ -15,21 +15,23 @@ const ShowSeat = () =>{
         console.log("Valoare table:", table);
     
         if (!table) {
-            console.warn('⚠️ Table nu e definit, nu facem request.');
+            console.warn('Table nu e definit, nu facem request.');
             return;
         }
     
         axios.get('/api/images', {
             params: {
                 nrTable: `${table}`
-            }
+            },
+            responseType: 'blob'
         })
         .then(response => {
-            console.log("✅ Răspuns API /api/images:", response.data.message);
-            setImageUrl(response.data.imageUrl);
+            const imageBlob = response.data
+            const imageObjectUrl = URL.createObjectURL(imageBlob)
+            setImageUrl(imageObjectUrl);
         })
         .catch(error => {
-            console.error("❌ Eroare la /api/images:", error.response?.status, error.message);
+            console.error("Eroare la /images:", error.response?.status, error.message);
             if (error.response?.data) {
                 console.error("Detalii eroare:", error.response.data);
             }
