@@ -1,44 +1,14 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
-const ShowSeat = () =>{
-    const [imageUrl, setImageUrl] = useState(null)
+
+const ShowTable = () =>{
     const location = useLocation()
     const navigate = useNavigate()
     const {name, table, kids} = location.state || {};
-    console.log('location.state:', location.state);
+    
 
-
-    useEffect(() => {
-        console.log("Valoare table:", table);
-    
-        if (!table) {
-            console.warn('Table nu e definit, nu facem request.');
-            return;
-        }
-    
-        axios.get('/api/images', {
-            params: {
-                nrTable: `${table}`
-            },
-            responseType: 'blob'
-        })
-        .then(response => {
-            const imageBlob = response.data
-            const imageObjectUrl = URL.createObjectURL(imageBlob)
-            setImageUrl(imageObjectUrl);
-        })
-        .catch(error => {
-            console.error("Eroare la /images:", error.response?.status, error.message);
-            if (error.response?.data) {
-                console.error("Detalii eroare:", error.response.data);
-            }
-        });
-    }, [table]);
-    
-    console.log(imageUrl)
     return(
 
         <div className="flex flex-col items-center p-6">
@@ -76,4 +46,4 @@ const ShowSeat = () =>{
     )
 }
 
-export default ShowSeat;
+export default ShowTable;

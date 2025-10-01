@@ -1,9 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import SearchInput from "./components/SearchInput";
 import Footer from "./components/Footer.jsx";
-import ShowSeat from "./components/ShowSeat.jsx"
+import ShowTable from "./components/ShowTable.jsx"
 
 function App() {
   
@@ -32,7 +31,7 @@ function App() {
         />
 
         <Route path="/show-seat"
-               element={<ShowSeat/>} 
+               element={<ShowTable/>} 
         />
 
 
