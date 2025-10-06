@@ -25,11 +25,11 @@ const ShowTable = () =>{
                 {kids}
             </h2> <br/>
             <img
-                src={`https://findmyseat.website/static/images/${table}.png`} alt="Seat"
+                src={"https://findmyseat.website/static/images/new1.png"} alt="Seat"
             /> <br/>
             <button
                 onClick={() =>navigate("/")}
-                className=" border-2 border-black rounded-lg p-1.5 text-white text-xs font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
+                className=" border-2 border-black rounded-lg p-1.5 text-white text-xss font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
             >
                 ÎNAPOI LA CĂUTARE
             </button> <br/>
