@@ -24,16 +24,16 @@ const ShowTable = () =>{
             <h2 className="pt-2">
                 {kids}
             </h2> 
-            <img className="w-full h-[500px]"
+            <img className="w-full h-[460px]"
                 src={"https://findmyseat.website/static/images/last.png"} alt="Seat"
-            /> <br/>
+            />
             <button
                 onClick={() =>navigate("/")}
-                className=" border-2 border-black rounded-lg p-1.5 text-white text-xs font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
+                className="mt-1 border-2 border-black rounded-lg p-1.5 text-white text-xs font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
             >
                 ÎNAPOI LA CĂUTARE
             </button> <br/>
-            {/*
+            
             <div className="flex flex-col items-center absolute bottom-0 p-1">
                 <h2 className="text-sm inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
                     Mulțumim pentru prezența dumneavoastră!
@@ -41,7 +41,7 @@ const ShowTable = () =>{
                 <h2 className="inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
                     Cu drag, Andrei & Miriam!
                 </h2>
-            </div>*/}
+            </div>
         </div>
 
     )
