@@ -35,10 +35,10 @@ const ShowTable = () =>{
             </button> <br/>
             
             <div className="flex flex-col items-center absolute bottom-0 p-1">
-                <h2 className="text-sm inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
+                <h2 className="text-xs inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
                     Mulțumim pentru prezența dumneavoastră!
                 </h2>
-                <h2 className="inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
+                <h2 className="text-xs inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
                     Cu drag, Andrei & Miriam!
                 </h2>
             </div>
