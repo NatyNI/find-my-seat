@@ -149,7 +149,7 @@ const SearchInput = () =>{
             </div>
 
                 <div className="fixed inset-0 -z-10 opacity-20">
-                    <img src="/images/bum.png" alt="A&M Logo" className="w-full h-full object-cover translate-y-10" />
+                    <img src="/images/bum.png" alt="A&M bumbac" className="w-full h-full object-cover translate-y-10" />
                 </div>
 
         </div>
