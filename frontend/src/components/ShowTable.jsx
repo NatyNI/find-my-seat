@@ -12,7 +12,7 @@ const ShowTable = () =>{
     return(
 
         <div className="flex flex-col items-center p-1">
-            <h1 className="mt-6 border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold">
+            <h1 className="mt-5 border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold">
                 {name}
             </h1>
             <h2 className="text-lg italic mt-2">
