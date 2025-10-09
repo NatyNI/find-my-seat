@@ -112,10 +112,16 @@ const SearchInput = () =>{
 
     return (
 
-        <div className=" mt-20 flex flex-col items-center top-0" >
-        
+        <div className=" mt-24 flex flex-col items-center top-0 ">
+            
+            {/* Top left corner */}
+            <div className="absolute mt-[20px] left-4 w-6 h-6 border-t-4 border-l-4 border-green-500"></div>
+
+            {/* Top right corner*/}
+            <div className="absolute mt-[20px] right-4 w-6 h-6 border-t-4 border-r-4 border-green-500"></div>
+
             <h3 
-                className="mt-6 text-xl font-bold">
+                className="mt-6 text-xl font-bold ">
                 Introdu numele tău
             </h3>
             <h3 className="text-sm">
