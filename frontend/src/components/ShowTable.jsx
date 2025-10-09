@@ -25,7 +25,7 @@ const ShowTable = () =>{
                 {kids}
             </h2> 
             <img className="w-full h-[400px]"
-                src={"https://findmyseat.website/static/images/last.png"} alt="Seat"
+                src={"https://findmyseat.website/static/images/last1.png"} alt="Seat"
             />
             <button
                 onClick={() =>navigate("/")}
