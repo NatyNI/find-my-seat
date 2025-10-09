@@ -12,7 +12,7 @@ const ShowTable = () =>{
     return(
 
         <div className="flex flex-col items-center p-1">
-            <h1 className="mt-5 border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold">
+            <h1 className="mt-5 border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold animate-bounce">
                 {name}
             </h1>
             <h2 className="text-lg italic mt-2">
@@ -29,7 +29,7 @@ const ShowTable = () =>{
             />
             <button
                 onClick={() =>navigate("/")}
-                className="mt-1 ml-[150px] border-2 border-black rounded-lg p-1.5 text-white text-xs font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
+                className="mt-1 ml-[160px] border-2 border-black rounded-lg p-1.5 text-white text-xs font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
             >
                 ÎNAPOI LA CĂUTARE
             </button> <br/>
