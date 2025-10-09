@@ -11,11 +11,11 @@ const ShowTable = () =>{
 
     return(
 
-        <div className="flex flex-col items-center p-6">
-            <h1 className="mt-3 border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold">
+        <div className="flex flex-col items-center p-1">
+            <h1 className="mt-6 border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold">
                 {name}
-            </h1> <br/>
-            <h2 className="text-lg italic ">
+            </h1>
+            <h2 className="text-lg italic mt-2">
                 Locul dumneavoastră este la
             </h2>
             <h2 className="text p-0.5 font-bold text-lg bg-gray-300 border rounded">
@@ -33,7 +33,7 @@ const ShowTable = () =>{
             >
                 ÎNAPOI LA CĂUTARE
             </button> <br/>
-            <div className="flex flex-col items-center absolute bottom-0 p-4">
+            <div className="flex flex-col items-center absolute bottom-0 p-1">
                 <h2 className="text-sm inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
                     Mulțumim pentru prezența dumneavoastră!
                 </h2>
