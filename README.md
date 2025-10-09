@@ -1,4 +1,4 @@
-# 🎉 Find My Seat
+# 🚀 Find My Seat
 
 **Find My Seat** is a wedding guest seating web app that helps guests quickly find which table they are assigned to at the wedding reception.
 
@@ -18,7 +18,7 @@ It is designed for ease of use, especially on mobile devices, and can be accesse
 
 ---
 
-## 🧱 Project Overview
+## Project Overview
 
 The project is made of two main parts:
 
