@@ -42,6 +42,9 @@ const ShowTable = () =>{
                     Cu drag, Andrei & Miriam!
                 </h2>
             </div>*/}
+            <div className="flex flex-col absolute">
+
+            </div>
         </div>
 
     )
