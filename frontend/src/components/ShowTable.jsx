@@ -24,12 +24,12 @@ const ShowTable = () =>{
             <h2 className="pt-1">
                 {kids}
             </h2> 
-            <img className="w-[340px] h-[430px] p-2"
+            <img className="w-[330px] h-[430px] p-2"
                 src={"https://findmyseat.website/static/images/last1.png"} alt="Seat"
             />
             <button
                 onClick={() =>navigate("/")}
-                className="mt-1 border-2 border-black rounded-lg p-1.5 text-white text-xs font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
+                className="mt-1 border-2 border-black rounded-lg p-1.5 text-white text-xs font-bold bg-gradient-to-l from-gray-550 via-gray-500 to-gray-400"
             >
                 ÎNAPOI LA CĂUTARE
             </button> <br/>
