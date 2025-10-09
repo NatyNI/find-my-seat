@@ -24,7 +24,7 @@ const ShowTable = () =>{
             <h2 className="pt-1">
                 {kids}
             </h2> 
-            <img className="w-[340px] h-[430px] p-2"
+            <img className="w-[340px] h-[510px] p-2"
                 src={"https://findmyseat.website/static/images/last1.png"} alt="Plan tables"
             />
             <button
@@ -33,7 +33,7 @@ const ShowTable = () =>{
             >
                 ÎNAPOI LA CĂUTARE
             </button> <br/>
-            
+           {/* 
             <div className="flex flex-col items-center absolute bottom-0 p-1">
                 <h2 className="text-xs inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
                     Mulțumim pentru prezența dumneavoastră!
@@ -41,7 +41,7 @@ const ShowTable = () =>{
                 <h2 className="text-xs inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
                     Cu drag, Andrei & Miriam!
                 </h2>
-            </div>
+            </div>*/}
         </div>
 
     )
