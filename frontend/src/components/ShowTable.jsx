@@ -29,7 +29,7 @@ const ShowTable = () =>{
             />
             <button
                 onClick={() =>navigate("/")}
-                className="fixed bottom-2 p-3 border-2 border-black rounded-lg p-1 text-white text-xs font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
+                className="bottom-2 p-3 border-2 border-black rounded-lg p-1 text-white text-xs font-bold bg-gradient-to-l from-gray-600 via-gray-500 to-gray-400"
             >
                 ÎNAPOI LA CĂUTARE
             </button> <br/>
