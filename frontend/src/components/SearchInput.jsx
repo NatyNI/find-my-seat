@@ -112,7 +112,7 @@ const SearchInput = () =>{
 
     return (
 
-        <div className=" mt-24 flex flex-col items-center top-0" >
+        <div className=" mt-20 flex flex-col items-center top-0" >
         
             <h3 
                 className="mt-6 text-xl font-bold">
