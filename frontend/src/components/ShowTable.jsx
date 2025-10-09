@@ -21,7 +21,7 @@ const ShowTable = () =>{
             <h2 className="text p-0.5 font-bold text-lg bg-gray-300 border rounded">
                 🍽️ masa {table} 
             </h2> 
-            <h2 className="pt-2">
+            <h2 className="pt-1">
                 {kids}
             </h2> 
             <img className="w-full h-[430px] p-2"
