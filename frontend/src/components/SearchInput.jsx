@@ -16,7 +16,7 @@ const SearchInput = () =>{
 
     //Request to API
     useEffect(() => {
-            axios.get(`/api/search`)
+            axios.get(`http://127.0.0.0:8000/search`)
                 .then(response =>{
                     setDataDB(response.data);
                 });
@@ -113,7 +113,7 @@ const SearchInput = () =>{
     return (
 
 
-            <div className="pt-24 flex flex-col items-center overflow-hidden">
+            <div className="pt-24 flex flex-col items-center">
 
                 {/* Top left corner */}
                 <div className="absolute mt-[20px] left-4 w-6 h-6 border-t-4 border-l-4 border-green-500"></div>
