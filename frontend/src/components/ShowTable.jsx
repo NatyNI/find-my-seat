@@ -11,7 +11,7 @@ const ShowTable = () =>{
 
     return(
 
-        <div className="flex flex-col items-center p-1">
+        <div className="flex flex-col items-center p-1 overflow-hidden">
             <h1 className="mt-5 border-t-2 border-b-2 rounded border-gray-500 text-lg font-bold animate-bounce">
                 {name}
             </h1>
