@@ -159,10 +159,10 @@ const SearchInput = () =>{
             </div>
 
             {/* Bottom left corner*/}
-            <div className="absolute bottom-[100px] left-4 w-6 h-6 border-b-4 border-l-4 border-green-500"></div>
+            <div className="absolute bottom-[90px] left-4 w-6 h-6 border-b-4 border-l-4 border-green-500"></div>
 
             {/* Bottom right corner*/}
-            <div className="absolute bottom-[100px] right-4 w-6 h-6 border-b-4 border-r-4 border-green-500"></div>
+            <div className="absolute bottom-[90px] right-4 w-6 h-6 border-b-4 border-r-4 border-green-500"></div>
         </div>
         
     );
