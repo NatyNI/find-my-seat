@@ -14,7 +14,7 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col">
 
               <header>
                 <Header/>
