@@ -112,7 +112,7 @@ const SearchInput = () =>{
 
     return (
 
-        <div className="mt-24 flex flex-col items-center overflow-hidden">
+        <div className="mt-24 flex flex-col items-center h-screen overflow-hidden ">
             
             {/* Top left corner */}
             <div className="absolute mt-[20px] left-4 w-6 h-6 border-t-4 border-l-4 border-green-500"></div>
