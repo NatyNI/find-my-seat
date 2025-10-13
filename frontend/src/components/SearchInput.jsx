@@ -112,7 +112,7 @@ const SearchInput = () =>{
 
     return (
 
-        <div className=" mt-24 flex flex-col items-center top-0 ">
+        <div className="mt-24 flex flex-col items-center top-0 ">
             
             {/* Top left corner */}
             <div className="absolute mt-[20px] left-4 w-6 h-6 border-t-4 border-l-4 border-green-500"></div>
@@ -121,7 +121,7 @@ const SearchInput = () =>{
             <div className="absolute mt-[20px] right-4 w-6 h-6 border-t-4 border-r-4 border-green-500"></div>
 
             <h3 
-                className="mt-6 text-xl font-bold ">
+                className="mt-7 text-xl font-bold ">
                 Introdu numele tău
             </h3>
             <h3 className="text-sm">
@@ -154,10 +154,12 @@ const SearchInput = () =>{
               )}
             </div>
 
-                <div className="fixed inset-0 -z-10 opacity-20">
-                    <img src="/images/bum.png" alt="A&M bumbac" className="w-full h-full object-cover translate-y-10" />
-                </div>
+            <div className="fixed inset-0 -z-10 opacity-20">
+                <img src="/images/bum.png" alt="A&M bumbac" className="w-full h-full object-cover translate-y-10" />
+            </div>
 
+            <div className="absolute bottom-[110px] right-4 w-6 h-6 border-b-4 border-r-4 border-green-500"></div>
+            <div className="absolute bottom-[110px] left-4 w-6 h-6 border-b-4 border-l-4 border-green-500"></div>
         </div>
         
     );
