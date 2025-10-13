@@ -14,13 +14,13 @@ function App() {
         <Route
           path="/"
           element={
-            <div className="flex flex-col h-screen">
+            <div className="flex flex-col ">
 
               <header>
                 <Header/>
               </header>
 
-              <main >
+              <main>
                 <SearchInput/>
               </main>
 
