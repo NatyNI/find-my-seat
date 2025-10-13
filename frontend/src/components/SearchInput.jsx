@@ -165,7 +165,7 @@ const SearchInput = () =>{
                 {/* Bottom right corner*/}
                 <div className="absolute bottom-[90px] right-4 w-6 h-6 border-b-4 border-r-4 border-green-500"></div>
             </div>
-
+            
     );
 };
 
