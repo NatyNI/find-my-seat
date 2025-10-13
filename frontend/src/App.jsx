@@ -20,7 +20,7 @@ function App() {
                 <Header/>
               </header>
 
-              <main className="flex-1 overflow-hidden">
+              <main >
                 <SearchInput/>
               </main>
 
