@@ -19,9 +19,11 @@ function App() {
               <header>
                 <Header/>
               </header>
-              <main>
+
+              <main className="flex-1 overflow-hidden">
                 <SearchInput/>
               </main>
+
               <footer>
                 <Footer/>
               </footer>

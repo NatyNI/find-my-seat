@@ -112,59 +112,60 @@ const SearchInput = () =>{
 
     return (
 
-        <div className="pt-24 flex flex-col items-center ">
-            
-            {/* Top left corner */}
-            <div className="absolute mt-[20px] left-4 w-6 h-6 border-t-4 border-l-4 border-green-500"></div>
 
-            {/* Top right corner*/}
-            <div className="absolute mt-[20px] right-4 w-6 h-6 border-t-4 border-r-4 border-green-500"></div>
+            <div className="pt-24 flex flex-col items-center">
 
-            <h3 
-                className="mt-7 text-xl font-bold ">
-                Introdu numele tău
-            </h3>
-            <h3 className="text-sm">
-                Începe cu numele de familie
-            </h3>
+                {/* Top left corner */}
+                <div className="absolute mt-[20px] left-4 w-6 h-6 border-t-4 border-l-4 border-green-500"></div>
 
-            <h3 className="text-red-500 p-2 text-sm">
-                {warningIncorectInput}
-            </h3>
-            <input 
-                type="text"
-                placeholder="Caută..."
-                value = {inputValue}
-                onChange= {(e) => setInputValue(e.target.value)}
-                onKeyDown={(e) => onKeyDownReceiveNameAndTable(e)}
-                className="px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
-            />
-    
-            <div className="max-h-[288px] w-full max-w-[215px] overflow-y-auto pr-1 ">
-              {sugestions.map((item, index) =>
-                <div key={index}
-                     className="w-full p-1.5 border-l-2 border-r-2 border-green-500/60 rounded-md hover:bg-green-500/40 text-center font-bold"
-                >
-                  <ul>
-                    <li onClick={() => onClickReceiveNameAndTable(item.name, item.table, item.kids)}>
-                      {item.name}
-                    </li>
-                  </ul>
+                {/* Top right corner*/}
+                <div className="absolute mt-[20px] right-4 w-6 h-6 border-t-4 border-r-4 border-green-500"></div>
+
+                <h3 
+                    className="mt-7 text-xl font-bold ">
+                    Introdu numele tău
+                </h3>
+                <h3 className="text-sm">
+                    Începe cu numele de familie
+                </h3>
+
+                <h3 className="text-red-500 p-2 text-sm">
+                    {warningIncorectInput}
+                </h3>
+                <input 
+                    type="text"
+                    placeholder="Caută..."
+                    value = {inputValue}
+                    onChange= {(e) => setInputValue(e.target.value)}
+                    onKeyDown={(e) => onKeyDownReceiveNameAndTable(e)}
+                    className="px-4 py-2 border border-green-500 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition-all duration-300"
+                />
+
+                <div className="max-h-[288px] w-full max-w-[215px] overflow-y-auto pr-1 ">
+                  {sugestions.map((item, index) =>
+                    <div key={index}
+                         className="w-full p-1.5 border-l-2 border-r-2 border-green-500/60 rounded-md hover:bg-green-500/40 text-center font-bold"
+                    >
+                      <ul>
+                        <li onClick={() => onClickReceiveNameAndTable(item.name, item.table, item.kids)}>
+                          {item.name}
+                        </li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
-              )}
+
+                <div className="fixed inset-0 -z-10 opacity-20">
+                    <img src="/images/bum.png" alt="A&M bumbac" className="w-full h-full object-cover translate-y-10" />
+                </div>
+
+                {/* Bottom left corner*/}
+                <div className="absolute bottom-[90px] left-4 w-6 h-6 border-b-4 border-l-4 border-green-500"></div>
+
+                {/* Bottom right corner*/}
+                <div className="absolute bottom-[90px] right-4 w-6 h-6 border-b-4 border-r-4 border-green-500"></div>
             </div>
 
-            <div className="fixed inset-0 -z-10 opacity-20">
-                <img src="/images/bum.png" alt="A&M bumbac" className="w-full h-full object-cover translate-y-10" />
-            </div>
-
-            {/* Bottom left corner*/}
-            <div className="absolute bottom-[90px] left-4 w-6 h-6 border-b-4 border-l-4 border-green-500"></div>
-
-            {/* Bottom right corner*/}
-            <div className="absolute bottom-[90px] right-4 w-6 h-6 border-b-4 border-r-4 border-green-500"></div>
-        </div>
-        
     );
 };
 
