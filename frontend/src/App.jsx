@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import SearchInput from "./components/SearchInput";
 import Footer from "./components/Footer.jsx";
 import ShowTable from "./components/ShowTable.jsx";
-s;
+
 function App() {
   return (
     <Router>
