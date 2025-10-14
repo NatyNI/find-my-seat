@@ -2,48 +2,35 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import SearchInput from "./components/SearchInput";
 import Footer from "./components/Footer.jsx";
-import ShowTable from "./components/ShowTable.jsx"
+import ShowTable from "./components/ShowTable.jsx";
 
 function App() {
-  
-  
   return (
-
     <Router>
       <Routes>
         <Route
           path="/"
           element={
             <div className="flex flex-col">
-
               <header>
-                <Header/>
+                <Header />
               </header>
 
               <main>
-                <SearchInput/>
+                <SearchInput />
               </main>
 
               <footer>
-                <Footer/>
+                <Footer />
               </footer>
-
             </div>
           }
         />
 
-        <Route path="/show-seat"
-               element={<ShowTable/>} 
-        />
-
-
+        <Route path="/show-seat" element={<ShowTable />} />
       </Routes>
     </Router>
-      
-
-    
   );
 }
 
 export default App;
-
