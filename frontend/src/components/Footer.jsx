@@ -10,5 +10,5 @@ const Footer = () => {
     </div>
   );
 };
-
+s;
 export default Footer;
