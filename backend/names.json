@@ -1,19 +1,45 @@
 [
+  { "table": 14, "name": "Nicu Cercel" },
+  { "table": 14, "name": "Dana Cercel" },
+  { "table": 14, "name": "Bogdan Pircalab" },
+  { "table": 14, "name": "Catalina Pircalab" },
+  { "table": 14, "name": "Moise Ilie" },
+  { "table": 14, "name": "Angela Ilie" },
+  { "table": 14, "name": "Iosif Vacaru" },
+  { "table": 14, "name": "Georgiana Vacaru" },
+  { "table": 14, "name": "Lucica Neag" },
+  { "table": 14, "name": "Steluta Neag" },
+
+  { "table": 15, "name": "Edi Babes" },
+  { "table": 15, "name": "Estera Babes" },
+  { "table": 15, "name": "Miriam Merezanu" },
+  { "table": 15, "name": "Sami Merezeanu" },
+  { "table": 15, "name": "Catalin Dobrin" },
+  { "table": 15, "name": "Melania Dobrin" },
+  { "table": 15, "name": "Rebeca Ivan" },
+  { "table": 15, "name": "Andrei Ivan" },
+  { "table": 15, "name": "Leo Neagu" },
+  { "table": 15, "name": "Corina Neagu" },
+
   {
-    "table": 14,
-    "name": [
-      "Nicu Cercel",
-      "Dana Cercel",
-      "Bogdan Pircalab",
-      "Catalina Pircalab",
-      "Moise Ilie",
-      "Angela Ilie",
-      "Iosif Vacaru",
-      "Georgiana Vacaru",
-      "Lucica Neag",
-      "Steluta Neag"
-    ]
+    "table": 16,
+    "name": "Lica Bledea",
+    "kids": "Copiii stau cu dumneavoastră"
   },
+  {
+    "table": 16,
+    "name": "Denisa Bledea",
+    "kids": "Copiii stau cu dumneavoastră"
+  },
+  { "table": 16, "name": "Tibi Sima" },
+  { "table": 16, "name": "Steluta Sima" },
+  { "table": 16, "name": "Tania Tudor" },
+  { "table": 16, "name": "Adrian Tudor" },
+  { "table": 16, "name": "Iosif Popescu" },
+  { "table": 16, "name": "Rahela Popescu" },
+  { "table": 16, "name": "Octavian Lingurar" },
+  { "table": 16, "name": "Ana Lingurar" },
+
   { "name": "Andrei Popescu", "table": 1 },
   { "name": "Maria Ionescu", "table": 2 },
   { "name": "George Enescu", "table": 3 },
