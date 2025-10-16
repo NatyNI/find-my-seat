@@ -268,34 +268,12 @@
 
   { "table": 20, "name": "Estera Adam" },
   { "table": 20, "name": "Cornel Adam" },
-  { "table": 20, "name": "Nati Nicolae" },
+  { "table": 20, "name": "Natanael Nicolae" },
   { "table": 20, "name": "Mihaela Vacaru" },
   { "table": 20, "name": "Sara Vacaru" },
   { "table": 20, "name": "Emima Nicolae" },
   { "table": 20, "name": "Enos Boariu" },
   { "table": 20, "name": "Caleb Boariu" },
   { "table": 20, "name": "Bogdan Roncea" },
-  { "table": 20, "name": "Alexandra Roncea" },
-
-  { "table": 26, "name": "George Minu" },
-  { "table": 26, "name": "Mari Minu" },
-  { "table": 26, "name": "Dan Lazarica" },
-  { "table": 26, "name": "Dan Lazar" },
-  { "table": 26, "name": "Emanuel Itigan" },
-  { "table": 26, "name": "Raluca Itigan" },
-  { "table": 26, "name": "Petre Manea" },
-  { "table": 26, "name": "Eugenia Manea" },
-  { "table": 26, "name": "George Petre" },
-  { "table": 26, "name": "Mia Petre" },
-
-  { "table": 27, "name": "Andrei Popescu" },
-  { "table": 27, "name": "Ana Popescu" },
-  { "table": 27, "name": "Andreea Adam" },
-  { "table": 27, "name": "Daniel Adam" },
-  { "table": 27, "name": "Fivi Ene" },
-  { "table": 27, "name": "Simon Ene" },
-  { "table": 27, "name": "Andreea Ilie" },
-  { "table": 27, "name": "Mihai Ilie" },
-  { "table": 27, "name": "Stefan Ilie" },
-  { "table": 27, "name": "Ema Ilie" }
+  { "table": 20, "name": "Alexandra Roncea" }
 ]
