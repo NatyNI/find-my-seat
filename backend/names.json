@@ -127,12 +127,12 @@
   {
     "table": 10,
     "name": "Adrian Slav",
-    "kids": "Copilul stă cu dumneavoastră"
+    "kids": "Copiii Dani, Darius, Damaris stau la masa 13 "
   },
   {
     "table": 10,
     "name": "Viorica Slav",
-    "kids": "Copilul stă cu dumneavoastră"
+    "kids": "Copiii Dani, Darius, Damaris stau la masa 13"
   },
   { "table": 10, "name": "Ioana Alexandra Niculae" },
   { "table": 10, "name": "Gabriel Niculae" },
@@ -153,12 +153,12 @@
   {
     "table": 12,
     "name": "Alexandru Morișcă",
-    "kids": "Levi & Rut stau la masa 13"
+    "kids": "Levi și Rut stau la masa 13"
   },
   {
     "table": 12,
     "name": "Fivi Morișcă",
-    "kids": "Levi & Rut stau la masa 13"
+    "kids": "Levi și Rut stau la masa 13"
   },
   { "table": 12, "name": "Silviu Răuță" },
   { "table": 12, "name": "Maria Răuță" },
@@ -244,12 +244,12 @@
   {
     "table": 18,
     "name": "Iosif Popescu",
-    "kids": "Copiii dumneavoastră stau la masa 13"
+    "kids": "Copiii mari stau la masa 13, cel mic cu voi"
   },
   {
     "table": 18,
     "name": "Rahela Popescu",
-    "kids": "Copiii dumneavoastră stau la masa 13"
+    "kids": "Copiii mari stau la masa 13, cel mic cu voi"
   },
   { "table": 18, "name": "Octavian Lingurar" },
   { "table": 18, "name": "Ana Lingurar" },
