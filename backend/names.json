@@ -12,8 +12,16 @@
 
   { "table": 2, "name": "Andrei Popescu" },
   { "table": 2, "name": "Ana Popescu" },
-  { "table": 2, "name": "Andreea Adam" },
-  { "table": 2, "name": "Daniel Adam" },
+  {
+    "table": 2,
+    "name": "Andreea Adam",
+    "kids": "Copiii Filip, Moise, Stefan stau la masa 14"
+  },
+  {
+    "table": 2,
+    "name": "Daniel Adam",
+    "kids": "Copiii Filip, Moise, Stefan stau la masa 14"
+  },
   { "table": 2, "name": "Fivi Ene" },
   { "table": 2, "name": "Simon Ene" },
   { "table": 2, "name": "Andreea Ilie" },
@@ -148,8 +156,16 @@
   { "table": 11, "name": "Costel Morișcă" },
   { "table": 11, "name": "Monica Morișcă" },
 
-  { "table": 12, "name": "Beni Boariu" },
-  { "table": 12, "name": "Damaris Boariu" },
+  {
+    "table": 12,
+    "name": "Beni Boariu",
+    "kids": "Iosua, Fineas, Nathan, Doris, Miriam masa 14"
+  },
+  {
+    "table": 12,
+    "name": "Damaris Boariu",
+    "kids": "Iosua, Fineas, Nathan, Doris, Miriam masa 14"
+  },
   {
     "table": 12,
     "name": "Alexandru Morișcă",
@@ -266,7 +282,11 @@
   { "table": 19, "name": "Florin Homneac" },
   { "table": 19, "name": "Mirela Homneac" },
 
-  { "table": 20, "name": "Estera Adam" },
+  {
+    "table": 20,
+    "name": "Estera Adam",
+    "kids": "Medeea are locul la masa 14"
+  },
   { "table": 20, "name": "Cornel Adam" },
   { "table": 20, "name": "Natanael Nicolae" },
   { "table": 20, "name": "Mihaela Vacaru" },
@@ -275,5 +295,105 @@
   { "table": 20, "name": "Enos Boariu" },
   { "table": 20, "name": "Caleb Boariu" },
   { "table": 20, "name": "Bogdan Roncea" },
-  { "table": 20, "name": "Alexandra Roncea" }
+  { "table": 20, "name": "Alexandra Roncea" },
+
+  { "table": 21, "name": "John Dragomir" },
+  { "table": 21, "name": "Iesimiel Stanescu" },
+  { "table": 21, "name": "Maria Dragomir" },
+  { "table": 21, "name": "Manu Nicolae" },
+  { "table": 21, "name": "Denisa Pantilimon" },
+  { "table": 21, "name": "Madi Tudor" },
+  { "table": 21, "name": "Estera Horj" },
+  { "table": 21, "name": "Elisa Sandra" },
+  { "table": 21, "name": "Rut Sandra" },
+  { "table": 21, "name": "Claudia Sandra" },
+
+  { "table": 22, "name": "Edi Babes" },
+  { "table": 22, "name": "Estera Babes" },
+  { "table": 22, "name": "Miriam Merezanu" },
+  { "table": 22, "name": "Sami Merezeanu" },
+  { "table": 22, "name": "Catalin Dobrin" },
+  { "table": 22, "name": "Melania Dobrin" },
+  { "table": 22, "name": "Rebeca Ivan" },
+  { "table": 22, "name": "Andrei Ivan" },
+  { "table": 22, "name": "Leo Neagu" },
+  { "table": 22, "name": "Corina Neagu" },
+
+  { "table": 23, "name": "Alexandru Niculae" },
+  { "table": 23, "name": "Damaris Niculae" },
+  { "table": 23, "name": "David Niculae" },
+  { "table": 23, "name": "Tabita Niculae" },
+  { "table": 23, "name": "Beni Niculae" },
+  { "table": 23, "name": "Gabriela Gheorghe" },
+  { "table": 23, "name": "Iacov Niculae" },
+  { "table": 23, "name": "Cristina Alexandra Niculae" },
+  { "table": 23, "name": "Andrei Barbu" },
+  { "table": 23, "name": "Andreea Rotea" },
+
+  { "table": 24, "name": "Viorica Stanciu" },
+  { "table": 24, "name": "Cristi Stanciu" },
+  { "table": 24, "name": "Maricica Nica" },
+  { "table": 24, "name": "Ionel Nica" },
+  { "table": 24, "name": "Catalina Petrache" },
+  { "table": 24, "name": "Sebi Petrache" },
+  { "table": 24, "name": "Rebeca Petrache" },
+  { "table": 24, "name": "Daniela Lingurar" },
+  { "table": 24, "name": "Damaris Lingurar" },
+
+  { "table": 25, "name": "Melania Iordache" },
+  { "table": 25, "name": "Laura Iordache" },
+  { "table": 25, "name": "Sarah Honciu" },
+  { "table": 25, "name": "Betty Blagu" },
+  { "table": 25, "name": "Emanuel Petre" },
+  { "table": 25, "name": "Ana Petre" },
+  { "table": 25, "name": "Emi Popescu" },
+  { "table": 25, "name": "Luminita Dobrinoiu" },
+  { "table": 25, "name": "Denisa Dobrinoiu" },
+
+  { "table": 26, "name": "Romelia Brasoveanu" },
+  { "table": 26, "name": "Andreea Brasoveanu" },
+  { "table": 26, "name": "Teo Niculae" },
+  { "table": 26, "name": "Mihai Neagu" },
+  { "table": 26, "name": "Andrei Bălăceanu" },
+  { "table": 26, "name": "Sefora Cristea" },
+  { "table": 26, "name": "Andreea Cristea" },
+  { "table": 26, "name": "Lidia Cristea" },
+  { "table": 26, "name": "Beni Dobrinoiu" },
+
+  { "table": 27, "name": "Iulian Andronache" },
+  { "table": 27, "name": "Andreea Andronache" },
+  { "table": 27, "name": "Marius Andronache" },
+  { "table": 27, "name": "Ana Andronache" },
+  { "table": 27, "name": "Veluța Constantin" },
+  { "table": 27, "name": "Mitu Andronache" },
+  { "table": 27, "name": "Maria Gheorghe" },
+  { "table": 27, "name": "Valentin Toma" },
+  { "table": 27, "name": "Iuliana Toma" },
+  { "table": 27, "name": "Serban Adrian" },
+  { "table": 27, "name": "Pisau Ion" },
+
+  { "table": 28, "name": "Andrei Dragomir" },
+  { "table": 28, "name": "Laurențiu Dragomir" },
+  { "table": 28, "name": "Costel Iordache" },
+  { "table": 28, "name": "Samuel Stoica" },
+  {
+    "table": 28,
+    "name": "Beni Dragomir",
+    "kids": "Copiii stau cu dumneavoastră"
+  },
+  {
+    "table": 28,
+    "name": "Debora Dragomir",
+    "kids": "Copiii stau cu dumneavoastră"
+  },
+  {
+    "table": 28,
+    "name": "Samuel Dragomir",
+    "kids": "Copiii stau cu dumneavoastră"
+  },
+  {
+    "table": 28,
+    "name": "Miriam Dragomir",
+    "kids": "Copiii stau cu dumneavoastră"
+  }
 ]
