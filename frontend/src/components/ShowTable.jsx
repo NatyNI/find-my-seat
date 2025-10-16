@@ -18,7 +18,7 @@ const ShowTable = () => {
       </h2>
       <h2 className="pt-1">{kids}</h2>
       <img
-        className="h-[510px] w-[340px] p-3 pb-10 pt-2"
+        className="pt- h-[510px] w-[340px] p-3 pb-10"
         src={`https://findmyseat.website/static/images/${table}.png`}
         alt="Plan tables"
       />
