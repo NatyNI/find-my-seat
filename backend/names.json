@@ -43,11 +43,23 @@
   { "table": 4, "name": "Dani Dragomir" },
   { "table": 4, "name": "Gena Dragomir" },
 
-  { "table": 5, "name": "Nina Gheorghe" },
+  {
+    "table": 5,
+    "name": "Nina Gheorghe",
+    "kids": "Albert are locul la masa 13"
+  },
   { "table": 5, "name": "Ioana Măceșaru" },
   { "table": 5, "name": "Corneliu Măceșaru" },
-  { "table": 5, "name": "Simon Gheorghe" },
-  { "table": 5, "name": "Abel Gheorghe" },
+  {
+    "table": 5,
+    "name": "Simon Gheorghe",
+    "kids": "Albert are locul la masa 13"
+  },
+  {
+    "table": 5,
+    "name": "Abel Gheorghe",
+    "kids": "Albert are locul la masa 13"
+  },
   { "table": 5, "name": "David Gheorghe" },
   { "table": 5, "name": "Andrei Gheorghe" },
   { "table": 5, "name": "Iosif Rusu" },
@@ -86,12 +98,12 @@
   {
     "table": 8,
     "name": "Ciprian Slav",
-    "kids": "Copii stau cu dumneavoastră"
+    "kids": "Copiii stau cu dumneavoastră"
   },
   {
     "table": 8,
     "name": "Gabriela Slav",
-    "kids": "Copii stau cu dumneavoastră"
+    "kids": "Copiii stau cu dumneavoastră"
   },
 
   { "table": 9, "name": "Emil Cristea" },
@@ -125,12 +137,6 @@
   { "table": 10, "name": "Ioana Alexandra Niculae" },
   { "table": 10, "name": "Gabriel Niculae" },
 
-  {
-    "table": 16,
-    "name": "Lica Bledea",
-    "kids": "Copii stau cu dumneavoastră"
-  },
-
   { "table": 11, "name": "Cristian Niculae" },
   { "table": 11, "name": "Marilena Niculae" },
   { "table": 11, "name": "Adi Nicolae" },
@@ -144,8 +150,16 @@
 
   { "table": 12, "name": "Beni Boariu" },
   { "table": 12, "name": "Damaris Boariu" },
-  { "table": 12, "name": "Alexandru Morișcă" },
-  { "table": 12, "name": "Fivi Morișcă" },
+  {
+    "table": 12,
+    "name": "Alexandru Morișcă",
+    "kids": "Levi & Rut stau la masa 13"
+  },
+  {
+    "table": 12,
+    "name": "Fivi Morișcă",
+    "kids": "Levi & Rut stau la masa 13"
+  },
   { "table": 12, "name": "Silviu Răuță" },
   { "table": 12, "name": "Maria Răuță" },
   { "table": 12, "name": "Marian Enache" },
@@ -194,27 +208,13 @@
   {
     "table": 16,
     "name": "Adrian Dragomir",
-    "kids": "Cei 2 opii stau cu dumneavoastră, Abigail la masa 13"
+    "kids": "Abigail stă la masa 13"
   },
   {
     "table": 16,
     "name": "Loredana Dragomir",
-    "kids": "Cei 2 opii stau cu dumneavoastră, Abigail la masa 13"
+    "kids": "Abigail stă la masa 13"
   },
-
-  {
-    "table": 16,
-    "name": "Denisa Bledea",
-    "kids": "Copilul stau cu dumneavoastră"
-  },
-  { "table": 16, "name": "Tibi Sima" },
-  { "table": 16, "name": "Steluta Sima" },
-  { "table": 16, "name": "Tania Tudor" },
-  { "table": 16, "name": "Adrian Tudor" },
-  { "table": 16, "name": "Iosif Popescu" },
-  { "table": 16, "name": "Rahela Popescu" },
-  { "table": 16, "name": "Octavian Lingurar" },
-  { "table": 16, "name": "Ana Lingurar" },
 
   { "table": 17, "name": "Lidia Ciobanu" },
   { "table": 17, "name": "Ema Ciobanu" },
@@ -230,12 +230,12 @@
   {
     "table": 18,
     "name": "Lica Bledea",
-    "kids": "Copilul stau cu dumneavoastră"
+    "kids": "Copilul stă cu dumneavoastră"
   },
   {
     "table": 18,
     "name": "Denisa Bledea",
-    "kids": "Copilul stau cu dumneavoastră"
+    "kids": "Copilul stă cu dumneavoastră"
   },
   { "table": 18, "name": "Tibi Sima" },
   { "table": 18, "name": "Steluta Sima" },
@@ -244,12 +244,12 @@
   {
     "table": 18,
     "name": "Iosif Popescu",
-    "kids": "Copii dumneavoastră stau la masa 13"
+    "kids": "Copiii dumneavoastră stau la masa 13"
   },
   {
     "table": 18,
     "name": "Rahela Popescu",
-    "kids": "Copii dumneavoastră stau la masa 13"
+    "kids": "Copiii dumneavoastră stau la masa 13"
   },
   { "table": 18, "name": "Octavian Lingurar" },
   { "table": 18, "name": "Ana Lingurar" },
