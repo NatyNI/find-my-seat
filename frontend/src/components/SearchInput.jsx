@@ -114,7 +114,7 @@ const SearchInput = () => {
       <div className="absolute right-4 mt-[20px] h-6 w-6 border-r-4 border-t-4 border-green-500"></div>
 
       <h3 className="mt-7 text-xl font-bold">Introdu numele tău</h3>
-      <h3 className="text-sm">Începe cu numele de familie</h3>
+      <h3 className="text-sm">Începe cu Prenumele</h3>
 
       <h3 className="p-2 text-sm text-red-500">{warningIncorectInput}</h3>
       <input
