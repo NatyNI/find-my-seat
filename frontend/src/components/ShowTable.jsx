@@ -19,7 +19,7 @@ const ShowTable = () => {
       <h2 className="pt-1">{kids}</h2>
       <img
         className="h-[510px] w-[340px] p-3 pb-10 pt-2"
-        src={"https://findmyseat.website/static/images/last1.png"}
+        src={`https://findmyseat.website/static/images/${table}.png`}
         alt="Plan tables"
       />
       <button
