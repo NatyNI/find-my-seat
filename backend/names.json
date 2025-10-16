@@ -241,8 +241,16 @@
   { "table": 18, "name": "Steluta Sima" },
   { "table": 18, "name": "Tania Tudor" },
   { "table": 18, "name": "Adrian Tudor" },
-  { "table": 18, "name": "Iosif Popescu" },
-  { "table": 18, "name": "Rahela Popescu" },
+  {
+    "table": 18,
+    "name": "Iosif Popescu",
+    "kids": "Copii dumneavoastră stau la masa 13"
+  },
+  {
+    "table": 18,
+    "name": "Rahela Popescu",
+    "kids": "Copii dumneavoastră stau la masa 13"
+  },
   { "table": 18, "name": "Octavian Lingurar" },
   { "table": 18, "name": "Ana Lingurar" },
 
