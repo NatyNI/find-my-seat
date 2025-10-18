@@ -16,7 +16,7 @@ const ShowTable = () => {
       <h2 className="text rounded border bg-gray-300 p-0.5 text-lg font-bold">
         🍽️ masa {table}
       </h2>
-      <h2 className="pl-1.5 pt-1">{kids}</h2>
+      <h2 className="pl-2 pt-1">{kids}</h2>
       <img
         className="p- h-[510px] w-[340px] pb-10"
         src={`https://findmyseat.website/static/images/${table}.png`}
