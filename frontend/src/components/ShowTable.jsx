@@ -9,7 +9,7 @@ const ShowTable = () => {
 
   return (
     <div className="flex flex-col items-center p-1">
-      <h1 className="mt-5 animate-bounce rounded border-b-2 border-t-2 border-gray-500 text-lg font-bold">
+      <h1 className="mt-5 rounded border-b-2 border-t-2 border-gray-500 text-lg font-bold">
         {name}
       </h1>
       <h2 className="mt-2 text-lg italic">Locul dumneavoastră este la</h2>
