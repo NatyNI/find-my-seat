@@ -8,15 +8,15 @@ const ShowTable = () => {
   const { name, table, kids } = location.state || {};
 
   return (
-    <div className="flex flex-col items-center p-1">
+    <div className="flex flex-col items-center bg-gray-300 p-1">
       <h1 className="mt-5 rounded border-b-2 border-t-2 border-gray-500 text-lg font-bold">
         {name}
       </h1>
       <h2 className="mt-2 text-lg italic">Locul dumneavoastră este la</h2>
-      <h2 className="text rounded border bg-gray-300 p-0.5 text-lg font-bold">
+      <h2 className="text rounded border bg-gray-400 p-0.5 text-lg font-bold">
         🍽️ masa {table}
       </h2>
-      <h2 className="pl-4 pt-1">{kids}</h2>
+      <h2 className="pl-4 pt-1 text-red-500">{kids}</h2>
       <img
         className="p- h-[510px] w-[340px] pb-10"
         src={`https://findmyseat.website/static/images/${table}.png`}
