@@ -1,3 +1,4 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -6,6 +7,22 @@ const ShowTable = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const { name, table, kids } = location.state || {};
+  const [imageUrl, setImageUrl] = useState(null);
+
+  useEffect(() => {
+    axios
+      .get("http://127.0.0.0:8000/get-image", {
+        params: { name: table },
+        responseType: "blob",
+      })
+      .then((response) => {
+        const url = URL.createObjectURL(response.data);
+        setImageUrl(url);
+      })
+      .catch((error) => {
+        console.error("Eroare la cererea imaginii:", error);
+      });
+  }, []);
 
   return (
     <div className="flex flex-col items-center bg-gray-300 p-1">
@@ -19,7 +36,7 @@ const ShowTable = () => {
       <h2 className="pl-4 pt-1 text-red-500">{kids}</h2>
       <img
         className="p- h-[510px] w-[340px] pb-10"
-        src={`https://findmyseat.website/static/images/${table}.png`}
+        src={imageUrl}
         alt="Plan tables"
       />
       <button
@@ -29,15 +46,6 @@ const ShowTable = () => {
         ÎNAPOI LA CĂUTARE
       </button>{" "}
       <br />
-      {/* 
-            <div className="flex flex-col items-center absolute bottom-0 p-1">
-                <h2 className="text-xs inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
-                    Mulțumim pentru prezența dumneavoastră!
-                </h2>
-                <h2 className="text-xs inset-0 -z-10 rounded-full bg-[radial-gradient(ellipse_at_center,_rgba(169,169,169,0.8)_0%,_rgba(169,169,169,0)_100%)]">
-                    Cu drag, Andrei & Miriam!
-                </h2>
-            </div>*/}
     </div>
   );
 };

@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  backend:
+    build: ./backend
+    image: natinicolae/find_my_seat_backend:latest
+    ports:
+      - "8000:8000"
+    environment:
+      - FLASK_ENV=development
+
+  frontend:
+    build: ./frontend
+    image: natinicolae/find_my_seat_frontend:latest
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

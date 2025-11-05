@@ -14,7 +14,7 @@ const SearchInput = () => {
 
   //Request to API
   useEffect(() => {
-    axios.get(`/api/search`).then((response) => {
+    axios.get("http://localhost:8000/search").then((response) => {
       setDataDB(response.data);
     });
   }, []);
@@ -54,7 +54,7 @@ const SearchInput = () => {
   const onClickReceiveNameAndTable = (name, table, kids) => {
     setInputValue(name);
     setReceiveTable(table);
-    navigate("/show-seat", {
+    navigate("/Show-Table", {
       state: { name, table, kids },
     });
   };
@@ -97,7 +97,7 @@ const SearchInput = () => {
         checkLenWord(inputValueOnKey);
         const name = normalizeInput(item.name);
         if (normalizedSearch === name) {
-          navigate("/show-seat", {
+          navigate("/Show-Table", {
             state: { name: item.name, table: item.table, kids: item.kids },
           });
         } else setWarningIncorectInput("Introdu Nume Prenume");

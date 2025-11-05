@@ -6,6 +6,46 @@ It is designed for ease of use, especially on mobile devices, and can be accesse
 
 ---
 
+## Demo
+
+### Scan
+
+![Scan](frontend/public/images/show_scan.png)
+
+### Search Page
+
+![Search](frontend/public/images/show_search.png)
+
+### Table View
+
+![Table](frontend/public/images/show_table.png)
+
+## 🚀 Run the App with Docker
+
+This project is available as prebuilt Docker images on Docker Hub:
+
+- **Frontend:** [natinicolae/find_my_seat_frontend](https://hub.docker.com/r/natinicolae/find_my_seat_frontend)
+- **Backend:** [natinicolae/find_my_seat_backend](https://hub.docker.com/r/natinicolae/find_my_seat_backend)
+
+---
+
+### 🧩 Run Containers Individually
+
+If you only want to pull and run the Docker images (without cloning the repository),  
+you can start each container separately with the following commands:
+
+```bash
+# 1. Pull both images
+docker pull natinicolae/find_my_seat_backend:latest
+docker pull natinicolae/find_my_seat_frontend:latest
+
+# 2. Start the backend
+docker run -d -p 8000:8000 --name find_my_seat_backend natinicolae/find_my_seat_backend:latest
+
+# 3. Start the frontend
+docker run -d -p 3000:80 --name find_my_seat_frontend natinicolae/find_my_seat_frontend:latest
+
+
 ## 💡 What It Does
 
 - Guests arrive at the venue, scan a QR code.
@@ -122,3 +162,4 @@ This section provides a technical breakdown of how the **Find My Seat** applicat
 - Clean error messages for unmatched names
 - Smooth transition between pages
 - Guest’s table clearly **highlighted on the map** for easy orientation
+```

@@ -27,7 +27,7 @@ function App() {
           }
         />
 
-        <Route path="/show-seat" element={<ShowTable />} />
+        <Route path="/Show-Table" element={<ShowTable />} />
       </Routes>
     </Router>
   );
